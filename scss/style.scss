@@ -1,12 +1,21 @@
 // Import mixins, variables, and other modules, usually compass related
-@import "base";
-@import "mixins";
+@import "helpers/variables";
+@import "helpers/mixins";
+
+// base 
+@import "base/reset";
+
 
 // Component rules
-@import "components/reset";
-@import "components/grids";
-@import "components/typography";
 @import "components/modulifier";
-@import "components/main";
+
+// layout
+@import "layout/grids";
+@import "layout/header";
+@import "layout/footer";
+
+// pages
+@import "pages/home";
+@import "pages/projects";
 
 // Vendor
