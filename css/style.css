@@ -517,6 +517,7 @@ body {
 
 p {
   line-height: 1.5;
+  letter-spacing: auto;
 }
 
 wrapper {
@@ -572,7 +573,7 @@ wrapper {
 }
 
 .work-text {
-  margin: 0 10px 0;
+  margin: 0 10px;
 }
 
 .work-text h2 {
@@ -598,4 +599,132 @@ wrapper {
   width: 100%;
   height: 100%;
   margin-bottom: 15px;
+}
+
+.sticky-pag {
+  display: none;
+}
+
+.footer-pag {
+  border: 2px solid #c2c2c2;
+  margin-bottom: 10px;
+  overflow: hidden;
+  /*div:hover,
+	a:hover {
+		background-color: $lightestgrey;
+	}*/
+}
+
+.footer-pag a {
+  overflow: hidden;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+}
+
+.footer-pag img {
+  width: 9px;
+  float: left;
+  margin: 4px 10px;
+  display: block;
+}
+
+.footer-pag p {
+  font-size: 12px;
+  float: left;
+}
+
+.footer-pag .previous-pag {
+  text-align: right;
+}
+
+.footer-pag .previous-pag img {
+  left: 10px;
+}
+
+.footer-pag .previous-pag a {
+  float: left;
+}
+
+.footer-pag .next-pag {
+  text-align: left;
+}
+
+.footer-pag .next-pag img {
+  right: 10px;
+}
+
+.footer-pag .next-pag a {
+  float: right;
+}
+
+@media only screen and (min-width: 17.8125em) {
+  /*285*/
+  .footer-pag p {
+    font-size: 14px;
+    float: left;
+  }
+}
+
+@media only screen and (min-width: 44.6875em) {
+  /*715*/
+  .footer-pag {
+    display: none;
+  }
+  .sticky-pag {
+    display: block;
+    position: absolute;
+    top: 50%;
+  }
+  .sticky-pag a {
+    display: block;
+    text-decoration: none;
+    -webkit-transition: all 250ms ease-in-out;
+            transition: all 250ms ease-in-out;
+    position: fixed;
+    background-color: #c2c2c2;
+    padding: 10px 8px;
+    width: 105px;
+  }
+  .sticky-pag a:hover {
+    background-color: #06394e;
+  }
+  .sticky-pag img {
+    width: 8px;
+    display: inline-block;
+    vertical-align: 6px;
+    margin: 0 8px;
+  }
+  .sticky-pag p {
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0.3px;
+    margin: 0 5px;
+    font-size: 12px;
+  }
+  .previous-button {
+    -webkit-transform: translate(-70px, 0);
+        -ms-transform: translate(-70px, 0);
+            transform: translate(-70px, 0);
+    text-align: right;
+  }
+  .previous-button:hover {
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .next-button {
+    right: 0;
+    -webkit-transform: translate(70px, 0);
+        -ms-transform: translate(70px, 0);
+            transform: translate(70px, 0);
+    text-align: left;
+  }
+  .next-button:hover {
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
 }

@@ -11,6 +11,24 @@
 </head>
 
 <body>
+
+
+		<div class="sticky-pag">
+
+			<a class="previous-button" href="#">
+				<div>
+					<p>Previous<br>Project</p>
+					<img src="imgs/previous.svg">
+				</div>
+			</a>
+
+			<a class="next-button" href="#">
+					<img src="imgs/next.svg">
+					<p>Next<br>Project</p>
+			</a>
+
+		</div>
+
 	<wrapper>
 
 		<header>
@@ -39,71 +57,25 @@
 			
 		</header>
 
-				<div class="content grid">
 
-			<ul class="projects-list">
-
-				<li class="thumb unit xs-1 s-1 m-1-2s l-1-2s xl-1-2s" itemscope itemtype="http://schema.org/CreativeWork">
-					<a href="msa.html" itemprop="url">
-						<img class="img-flex" src="imgs/beasts-thumb.jpg" alt="Image of Beasts Poster" itemprop="image">
-						<p itemprop="name" class="thumb-info">MSA Brand</p>
-					</a>
-				</li>
-
-				<li class="thumb unit xs-1 s-1 m-1-2s l-1-2s xl-1-2s" itemscope itemtype="http://schema.org/CreativeWork">
-					<a href="iaw.html" itemprop="url">
-						<img class="img-flex" src="imgs/beasts-thumb.jpg" alt="Image of Beasts Poster" itemprop="image">
-						<p itemprop="name" class="thumb-info">IAW Campaign</p>
-					</a>
-				</li>
-
-				<li class="thumb unit xs-1 s-1 m-1-2s l-1-2s xl-1-2s" itemscope itemtype="http://schema.org/CreativeWork">
-					<a href="beasts.html" itemprop="url">
-						<img class="img-flex" src="imgs/beasts-thumb.jpg" alt="Image of Beasts Poster" itemprop="image">
-						<p itemprop="name" class="thumb-info">Beasts of the Southern Wild Poster</p>
-					</a>
-				</li>
-
-				<li class="thumb unit xs-1 s-1 m-1-2s l-1-2s xl-1-2s" itemscope itemtype="http://schema.org/CreativeWork">
-					<a href="beasts.html" itemprop="url">
-						<img class="img-flex" src="imgs/beasts-thumb.jpg" alt="Image of Beasts Poster" itemprop="image">
-						<p itemprop="name" class="thumb-info">Beasts of the Southern Wild Poster</p>
-					</a>
-				</li>
-
-				<li class="thumb unit xs-1 s-1 m-1-2s l-1-2s xl-1-2s" itemscope itemtype="http://schema.org/CreativeWork">
-					<a href="beasts.html" itemprop="url">
-						<img class="img-flex" src="imgs/beasts-thumb.jpg" alt="Image of Beasts Poster" itemprop="image">
-						<p itemprop="name" class="thumb-info">Beasts of the Southern Wild Poster</p>
-					</a>
-				</li>
-
-				<li class="thumb unit xs-1 s-1 m-1-2s l-1-2s xl-1-2s" itemscope itemtype="http://schema.org/CreativeWork">
-					<a href="beasts.html" itemprop="url">
-						<img class="img-flex" src="imgs/beasts-thumb.jpg" alt="Image of Beasts Poster" itemprop="image">
-						<p itemprop="name" class="thumb-info">Beasts of the Southern Wild Poster</p>
-					</a>
-				</li>
-
-			</ul>
-
-		</div>
-
-		
-
-
-
-
-
-
-
-
-
-
-
+		{{content}}
 
 		<footer class="footer">
+
 			<div class"grid">
+
+				<div class="footer-pag grid">
+
+					<div class="unit xs-1-2 s-1-2 m-1-2 previous-pag">
+						<a href="#"><img src="imgs/previous-grey.svg"><p> Previous Project </p></a>
+					</div>
+
+					<div class="unit xs-1-2 s-1-2 m-1-2 next-pag">
+						<a href="#"><p> Next Project </p><img src="imgs/next-grey.svg"></a>
+					</div>
+
+				</div>
+
 				<hr class="lines">
 
 				<div class="unit xs-1 s-1 m-1-2 l-1-2">
