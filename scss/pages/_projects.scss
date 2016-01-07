@@ -1,5 +1,13 @@
 .work-text {
-	margin: 0 10px;
+	margin: 40px 0 10px 0;
+}
+
+.caption {
+	font-size: 15px;
+	margin: 0 0 15px 0;
+	color: $grey;
+	font-weight: $normal;
+	text-align: center;
 }
 
 .work-text h2{
@@ -32,11 +40,18 @@
 	display: none;
 }
 
+
+
 .footer-pag {
-	border: 2px solid $lightgrey;
-	margin-bottom: 10px;
+	background-color: $lightestgrey;
+	margin: 15px 0 10px 0;
 	overflow: hidden;
 
+	p {
+		font-weight: $normal;
+		color: $grey;
+	}	
+	
 	a {
 		overflow: hidden;
 		text-decoration: none;
@@ -75,10 +90,20 @@
 		a:hover:after{
 
 		}
+
 	}
+
+	.previous-pag:hover {
+		  background-color: $navy;
+		  transition: all 0.2s ease-in-out;
+		  p:hover {
+		  	color: #fff;
+			}
+		}
 
 	.next-pag {
 		text-align: left;
+		overflow: hidden;
 
 		img {
 			right: 10px;
@@ -88,16 +113,43 @@
 			float: right;
 		}
 
-		div:hover {
-			background-color: red;
-		}
-
 		a:hover:after {
 
 		}
 	}
+		.next-pag:hover {
+		  background-color: $navy;
+		  transition: all 0.3s ease-in-out;
+		}
 
+		.next-pag::after {
+		  content: "";
+		  background: #ecf0f1;
+		  position: absolute;
+		  z-index: -1;
+		  padding: 0.85em 0.75em;
+		  display: block;
+		}
+		.next-pag[class^="slide"]::after {
+		  transition: all 0.35s;
+		}
+		.next-pag[class^="slide"]:hover::after {
+		  left: 0;
+		  right: 0;
+		  top: 0;
+		  bottom: 0;
+		  transition: all 0.35s;
+		}
+		.next-pag.slide-from-left::after {
+		  top: 0;
+		  bottom: 0;
+		  left: -100%;
+		  right: 100%;
+		}
+	
 }
+
+
 
 @media only screen and(min-width: 17.8125em) { /*285*/
 
@@ -156,10 +208,11 @@
 	}
 
 	.previous-button {
-		transform: translate(-70px,0);
+		transform: translate(-80px,0);
 		text-align: right;
 		&:hover{
-			transform: translate(0,0);
+			transform: translate(-10px,0);
+
 
 		}
 

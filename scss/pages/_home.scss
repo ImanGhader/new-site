@@ -72,10 +72,19 @@ wrapper {
 
 
 @media only screen and(min-width: 44.6875em) { /*715*/
-	wrapper {
-		width: 75%;
-		margin: 0 auto;
+	.header {
+            width: 75%;
+             margin: 10px auto 40px;
+        }
+
+    wrapper {
+		.centered {
+            width: 75%;
+    		margin: 0 auto;
+        }
 	}
+
+    
 
 
 }
