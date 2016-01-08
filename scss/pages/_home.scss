@@ -58,6 +58,10 @@ wrapper {
     opacity: 0.9;
 }
 
+.header {
+    margin: 10px 0 40px;
+}
+
   
 
 @media only screen and(min-width: 33.125em) { /*715*/
@@ -71,7 +75,7 @@ wrapper {
 }
 
 
-@media only screen and(min-width: 44.6875em) { /*715*/
+@media only screen and(min-width: 60em) { /*768*/
 	.header {
             width: 75%;
              margin: 10px auto 40px;
