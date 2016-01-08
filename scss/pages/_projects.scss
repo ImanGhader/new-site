@@ -8,6 +8,12 @@
 	color: $grey;
 	font-weight: $normal;
 	text-align: center;
+
+	a {
+		color: $navy;
+		font-weight: $normal;
+		font-size: 18px;
+	}
 }
 
 .work-text h2{
@@ -44,6 +50,8 @@
 	width: 100%;
 	margin: 0 auto;
 }
+
+
 
 .footer-pag {
 	background-color: $lightestgrey;

@@ -588,6 +588,12 @@ wrapper {
   text-align: center;
 }
 
+.caption a {
+  color: #06394e;
+  font-weight: 400;
+  font-size: 18px;
+}
+
 .work-text h2 {
   font-size: 20px;
   color: #06394e;
